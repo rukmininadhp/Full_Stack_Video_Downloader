@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Video Downloader</title>
+        <link rel="stylesheet" href="\static\style.css">
+    </head>
+    <body>
+    <div class="container">
+        <h1>Full Stack Video Downloader</h1>
+        <form method="POST">
+            <input type="text" name="url" placeholder="Paste video URL here..." required>
+            <select name="quality">
+                <option>360p</option>
+                <option>720p</option>
+                <option selected>1080p</option>
+                <option>4K</option>
+                <option>Best (Highest)</option>
+            </select>
+            <select name="audio">
+                <option>AAC - Slow (But Recommended)</option>
+            </select>
+            <button type="submit">Download</button>
+        </form>
+        <div class="progress_section">
+            <p id="progress_text">Progress: 0%</p>
+            <div class="progress">
+                <div id="bar"></div>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </body>
+</html>
