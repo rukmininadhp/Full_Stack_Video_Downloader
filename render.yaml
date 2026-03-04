@@ -8,4 +8,4 @@ services:
       apt-get update
       apt-get install -y ffmpeg
 
-    startCommand: gunicorn app:app
+    startCommand: python app.py
