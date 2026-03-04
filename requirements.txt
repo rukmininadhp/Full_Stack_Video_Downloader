@@ -2,4 +2,3 @@ Flask
 yt-dlp
 imageio-ffmpeg
 gunicorn
-flask
