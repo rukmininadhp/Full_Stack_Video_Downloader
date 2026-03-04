@@ -1,5 +1,5 @@
 {
   "deploy": {
-    "startCommand": "gunicorn app:app"
+    "startCommand": "gunicorn app:app --workers 2"
   }
 }
